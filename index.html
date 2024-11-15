@@ -224,8 +224,8 @@
             الرصيد النهائي: <span id="balance">0.000</span>
         </div>
         <div class="actions">
-            <button onclick="resetInputs()" class="reset-btn">مسح جميع المدخلات</button>
-            <button onclick="exportToHTML()" class="export-btn">تصدير إلى HTML</button>
+            <button onclick="resetInputs()" class="reset-btn">مسح</button>
+            <button onclick="exportToHTML()" class="export-btn">التّقرير</button>
         </div>
     </div>
 
@@ -297,8 +297,8 @@
 
         function formatDate(date) {
             const days = ['الأحد', 'الإثنين', 'الثلاثاء', 'الأربعاء', 'الخميس', 'الجمعة', 'السبت'];
-            const months = ['يناير', 'فبراير', 'مارس', 'إبريل', 'مايو', 'يونيو', 'يوليو', 'أغسطس', 'سبتمبر', 'أكتوبر', 'نوفمبر', 'ديسمبر'];
-            
+            const months = ['جانفي', 'فيفري', 'مارس', 'أفريل', 'ماي', 'جوان', 'جويلية', 'أوت', 'سبتمبر', 'أكتوبر', 'نوفمبر', 'ديسمبر'];
+    
             const dayName = days[date.getDay()];
             const day = date.getDate();
             const month = months[date.getMonth()];
